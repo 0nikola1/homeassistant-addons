@@ -1,7 +1,8 @@
 #!/usr/bin/env bashio
 set -e
 
-bashio::log.info "Setting octoprint host: $(bashio::config 'octoprint_host')"
+C_OCTOPRINT_HOST=$(bashio::config 'octoprint_host')
+bashio::log.info "Setting octoprint host: ${C_OCTOPRINT_HOST}"
 sed -i "s/OCTOPRINT_HOST/$(bashio::config 'octoprint_host')/g" /haproxy.cfg
 
 bashio::log.info "Setting octoprint port: $(bashio::config 'octoprint_port')"
