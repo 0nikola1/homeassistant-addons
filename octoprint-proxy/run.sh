@@ -1,4 +1,4 @@
-#!/usr/bin/env bashio
+#!/usr/bin/with-contenv bashio
 set -e
 
 C_OCTOPRINT_HOST=$(bashio::config 'octoprint_host')
