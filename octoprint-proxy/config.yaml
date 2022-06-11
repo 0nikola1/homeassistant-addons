@@ -1,4 +1,9 @@
-
+arch:
+- armhf
+- armv7
+- aarch64
+- amd64
+- i386
 name: Basic Proxy
 version: 2022.6.4
 slug: basic_proxy
@@ -8,12 +13,6 @@ ingress: true
 ingress_port: 80
 panel_title: Basic Proxy
 panel_icon: mdi:server-network
-arch:
-- armhf
-- armv7
-- aarch64
-- amd64
-- i386
 startup: application
 init: false
 boot: auto
