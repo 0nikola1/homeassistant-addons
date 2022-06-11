@@ -10,6 +10,7 @@
   "panel_icon": "mdi:server-network",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
+  "init": false,
   "boot": "auto",
   "options": {
     "octoprint_host": "10.144.144.5",
