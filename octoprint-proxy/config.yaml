@@ -5,7 +5,7 @@ arch:
 - amd64
 - i386
 name: Basic Proxy
-version: 2022.6.4
+version: 2022.6.5
 slug: basic_proxy
 description: Access simple websites from within Home Assistant
 url: https://github.com/0nikola1/homeassistant-addons/
