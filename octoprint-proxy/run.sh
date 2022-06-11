@@ -1,11 +1,11 @@
 #!/usr/bin/env bashio
 set -e
 
-bashio::log.info "Setting octoprint host: $(bashio::config octoprint_host)"
-sed -i "s/OCTOPRINT_HOST/$(bashio::config octoprint_host)/g" /haproxy.cfg
+bashio::log.info "Setting octoprint host: $(bashio::config 'octoprint_host')"
+sed -i "s/OCTOPRINT_HOST/$(bashio::config 'octoprint_host')/g" /haproxy.cfg
 
-bashio::log.info "Setting octoprint port: $(bashio::config octoprint_port)"
-sed -i "s/OCTOPRINT_PORT/$(bashio::config octoprint_port)/g" /haproxy.cfg
+bashio::log.info "Setting octoprint port: $(bashio::config 'octoprint_port')"
+sed -i "s/OCTOPRINT_PORT/$(bashio::config 'octoprint_port')/g" /haproxy.cfg
 
 if $(bashio::config.true ssl.enabled); then
 	bashio::log.info "SSL communitcation to octoprint enabled"
