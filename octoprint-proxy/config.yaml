@@ -1,0 +1,32 @@
+
+name: Basic Proxy
+version: 2022.6.1
+slug: basic_proxy
+description: Access simple websites from within Home Assistant
+url: https://github.com/0nikola1/homeassistant-addons/
+ingress: true
+ingress_port: 80
+panel_title: Basic Proxy
+panel_icon: mdi:server-network
+arch:
+- armhf
+- armv7
+- aarch64
+- amd64
+- i386
+startup: application
+init: false
+boot: auto
+options:
+  octoprint_host: 10.144.144.5
+  octoprint_port: '80'
+  ssl:
+    enabled: false
+    verify: false
+schema:
+  octoprint_host: str
+  octoprint_port: port
+  ssl:
+    enabled: bool
+    verify: bool
+hassio_api: false
