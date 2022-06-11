@@ -19,13 +19,13 @@ init: false
 boot: auto
 options:
   octoprint_host: 10.144.144.5
-  octoprint_port: '80'
+  octoprint_port: 80
   ssl:
     enabled: false
     verify: false
 schema:
   octoprint_host: str
-  octoprint_port: port
+  octoprint_port: int
   ssl:
     enabled: bool
     verify: bool
